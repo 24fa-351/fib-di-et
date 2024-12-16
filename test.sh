@@ -2,7 +2,7 @@ echo "Running tests..."
 echo
 
 echo "3" > test1.txt
-output=$(./fib 5 r test1.txt)
+output=$(./fib.exe 5 r test1.txt)
 expected_output="13"
 rm test1.txt
 
@@ -22,7 +22,7 @@ fi
 
 
 echo "23" > test2.txt
-output=$(./fib 4 i test2.txt)
+output=$(./fib.exe 4 i test2.txt)
 expected_output="121393"
 rm test2.txt
 
